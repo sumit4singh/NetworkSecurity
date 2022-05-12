@@ -1,0 +1,5 @@
+access-list 104 permit tcp 170.16.10.5 0.0.0.0 170.16.70.0 0.0.0.255 range 22
+access-list 104 deny tcp 170.16.0.0 0.0.255.255 170.16.70.0 0.0.0.255 range 22
+access-list 104 permit ip 170.16.0.0 0.0.255.255 0.0.0.0 255.255.255.255
+R3 # interface E1
+Ip access group 104 out

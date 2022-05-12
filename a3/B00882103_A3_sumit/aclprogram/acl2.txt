@@ -1,0 +1,4 @@
+access-list 5 deny 170.16.20.0 0.0.0.255 
+access-list 5 permit 0.0.0.0 255.255.255.255
+R3 # interface E1
+Ip access group 5 out

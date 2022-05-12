@@ -1,0 +1,4 @@
+access-list 2 deny 170.16.40.0 0.0.0.255
+access-list 2 permit 170.16.0.0 0.0.255.255
+R2 # interface E0
+Ip access group 2 out
